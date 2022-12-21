@@ -1,0 +1,15 @@
+[
+    {
+        "question": "Player A declares an attack with their ${0} on a Monster Player B controls. On attack declaration, Player A activates the effect of ${0} to banish that opponent Monster. Does a replay occur?",
+        "propositions": ["Yes", "No"],
+        "correct": 0,
+        "cards": ["Mirrorjade the Iceblade Dragon"],
+        "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17069"],
+        "explanation": "<p>A replay can only occur before the Damage Step starts</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>The number of Monsters on Player B changes (even momentarily)</li><li>The attack target leaves the field</li><li>The attacking Monster gains the ability to attack directly</li><li>The attacking monster can no longer attack while it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul>",
+        "source": "Official Rulebook v9, page 35 (Page 39 of the PDF)",
+        "source_link": "https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"
+    },
+    {
+
+    }
+]
