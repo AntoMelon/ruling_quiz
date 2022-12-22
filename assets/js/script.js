@@ -1,6 +1,7 @@
 "use strict;"
 
 var ruling_questions = null;
+var currentQuiz;
 
 fetch('./assets/json/questions/ruling_questions.json').then(response => response.json()).then(function (data) {
     ruling_questions = data;
@@ -40,4 +41,13 @@ function insertCardNamesLinks(string,names,links) {
 
 document.addEventListener("DOMContentLoaded",function(e) {
 
+    let btnGenerateQuiz = document.getElementById("btnGenerateQuiz")
+    btnGenerateQuiz.addEventListener("click", function(e) {
+        if (!areQuestionsLoaded()) {
+            alert("Questions could not be loaded.");
+            return;
+        }
+        currentQuiz = generateQuizOfSize(questions,40);
+        console.log(currentQuiz);
+    });
 });
