@@ -24,6 +24,20 @@ function generateQuizOfSize(questions,size) {
     return questions.slice(0,size);
 }
 
+function insertCardNamesLinks(string,names,links) {
+    let size = names.length;
+    let res = string;
+
+    for (let i = 0; i < size; ++i) {
+        const replaceNow = "${" + i + "}";
+        console.log(replaceNow);
+
+        res = res.replaceAll(replaceNow,"<a href=\"" + links[i] + "\" target=\"_blank\">" + names[i] + "</a>");
+    }
+
+    return res
+}
+
 document.addEventListener("DOMContentLoaded",function(e) {
 
 });
