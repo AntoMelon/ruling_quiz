@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded",function(e) {
             alert("Questions could not be loaded.");
             return;
         }
-        currentQuiz = generateQuizOfSize(questions,40);
+        currentQuiz = generateQuizOfSize(ruling_questions,40);
         console.log(currentQuiz);
     });
 });
