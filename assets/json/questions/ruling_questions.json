@@ -20,5 +20,26 @@
         "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field during the \"Before damage calculation\" timing, which is during the Damage Step, so a replay cannot occur.</p>",
         "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)", "Forbidden Droplet can be activated in Damage Step"],
         "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf", "https://db.ygorganization.com/card#15299"]
+    },
+    {
+        "id": 2,
+        "question": "Player A Special Summons ${0} while they have no Dragon Monsters in their Deck or GY. Can they activate the 2nd effect of that ${0}?",
+        "propositions": ["Yes", "No"],
+        "correct": 0,
+        "cards": ["Bystial Magnamhut", "Infernoble Knight Captain Roland"],
+        "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17762&request_locale=en", "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=15275&request_locale=en"],
+        "explanation": "<p>According to a precedent regarding the effect of ${1}, it is legal to activate an effect to add a card to your hand at a future point in the turn/duel, even if there are currently no cards that could be added. If no cards can be added when it is time to do so, then the effect will simply resolve without effect.</p>",
+        "sources": ["Precedent for Captain Roland"],
+        "sources_links": ["https://db.ygorganization.com/qa#23006"]
+    },{
+        "id": 3,
+        "question": "Player A declares a direct attack with their ${0} while Player B controls a Monster. On attack declaration, Player B activates their ${1} to negate the effects of Player A's ${0}. Does a replay occur?",
+        "propositions": ["Yes", "No"],
+        "correct": 0,
+        "cards": ["Trickstar Lilybell", "Infinite Impermanence"],
+        "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13045&request_locale=en", "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13631"],
+        "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, ${0} lost the ability to attack directly before the Damage Step started, so a replay can occur.</p>",
+        "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)"],
+        "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"]
     }
 ]

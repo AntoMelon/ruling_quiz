@@ -79,7 +79,7 @@ function generateExplanationText(questionObj, correctness) {
 
     res += "<p>You are <i class=\"boldUnderline\">" + (correctness ? "" : "IN") + "CORRECT</i></p>";
 
-    res += questionObj.explanation;
+    res += insertCardNamesLinks(questionObj.explanation,questionObj.cards,questionObj.links);
 
     if (questionObj.sources.length > 0) {
         res += "<p>Sources:</p><ul>";
