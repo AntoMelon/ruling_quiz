@@ -6,18 +6,18 @@
         "correct": 0,
         "cards": ["Mirrorjade the Iceblade Dragon"],
         "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17069&request_locale=en"],
-        "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>The number of Monsters on Player B changes (even momentarily)</li><li>The attack target leaves the field</li><li>The attacking Monster gains the ability to attack directly</li><li>The attacking monster can no longer attack while it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field on attack declaration, so a replay can occur.</p>",
+        "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field on attack declaration, so a replay can occur.</p>",
         "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)"],
         "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"]
     },
     {
         "id": 1,
-        "question": "Player A declares an attack with their Monster on a Monster Player B controls. Before damage calculation, Player B activates ${0} bu sending their Monster to negate the effects of Player A's Monster. Does a replay occur?",
+        "question": "Player A declares an attack with their Monster on a Monster Player B controls. Before damage calculation, Player B activates ${0} by sending their Monster to the GY to negate the effects of Player A's Monster and halve its ATK. Does a replay occur?",
         "propositions": ["Yes", "No"],
         "correct": 1,
         "cards": ["Forbidden Droplet"],
         "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=15299&request_locale=en"],
-        "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>The number of Monsters on Player B changes (even momentarily)</li><li>The attack target leaves the field</li><li>The attacking Monster gains the ability to attack directly</li><li>The attacking monster can no longer attack while it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field before damage calculation, which is during the Damage Step, so a replay cannot occur.</p>",
+        "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field during the \"Before damage calculation\" timing, which is during the Damage Step, so a replay cannot occur.</p>",
         "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)", "Forbidden Droplet can be activated in Damage Step"],
         "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf", "https://db.ygorganization.com/card#15299"]
     }

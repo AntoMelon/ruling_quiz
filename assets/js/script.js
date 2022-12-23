@@ -2,6 +2,8 @@
 
 var ruling_questions = null;
 var currentQuiz;
+var currentQuestion = 0;
+var score = 0;
 
 fetch('./assets/json/questions/ruling_questions.json').then(response => response.json()).then(function (data) {
     ruling_questions = data;
@@ -20,6 +22,18 @@ function shuffleArray(array) {
     }
 }
 
+function getRadioValue(radioName) {
+    var radios = document.getElementsByName(radioName);
+
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            return radios[i].value;
+        }
+    }
+
+    return null;
+}
+
 function generateQuizOfSize(questions,size) {
     shuffleArray(questions);
     return questions.slice(0,size);
@@ -31,12 +45,98 @@ function insertCardNamesLinks(string,names,links) {
 
     for (let i = 0; i < size; ++i) {
         const replaceNow = "${" + i + "}";
-        console.log(replaceNow);
 
         res = res.replaceAll(replaceNow,"<a href=\"" + links[i] + "\" target=\"_blank\">" + names[i] + "</a>");
     }
 
     return res
+}
+
+function generateQuestionText(questionObj) {
+    res = "";
+
+    res += "<p>" + insertCardNamesLinks(questionObj.question,questionObj.cards,questionObj.links) + "</p>";
+
+    res += "<ul>";
+
+    for (let i = 0; i < questionObj.propositions.length; ++i) {
+        res += "<li><label>";
+        res += "<input type=\"radio\" name=\"question\" value=\"" + i +"\">"
+        let prop = questionObj.propositions[i];
+        res += insertCardNamesLinks(prop,questionObj.cards,questionObj.links);
+        res += "</label></li>";
+    }
+
+    res += "</ul>";
+
+    res += "<div class=\"centerText\"><button id=\"btnCheckAnswer\">Check answer</button></div>";
+
+    return res;
+}
+
+function generateExplanationText(questionObj, correctness) {
+    res = "";
+
+    res += "<p>You are <i class=\"boldUnderline\">" + (correctness ? "" : "IN") + "CORRECT</i></p>";
+
+    res += questionObj.explanation;
+
+    if (questionObj.sources.length > 0) {
+        res += "<p>Sources:</p><ul>";
+
+        for (let iSource = 0; iSource < questionObj.sources.length; ++iSource) {
+            res += "<li>● <a href=\"" + questionObj.sources_links[iSource] + "\" target=\"_blank\">" + questionObj.sources[iSource] + "</a></li>"
+        }
+
+        res += "</ul>";
+    }
+
+    res += "<div class=\"centerText\"><button id=\"btnNextQuestion\">Next question</button></div>"
+
+    return res;
+}
+
+function displayResults() {
+    let divQuestion = document.getElementById("question");
+
+    text = "";
+    text += "<div class=\"centerText\"><p><i class=\"boldUnderline\">Your results:</i></p>"
+    text += "<p>You answered " + score + " questions correctly out of " + ruling_questions.length + " questions. (" + (score/ruling_questions.length)*100 + "%)" + "</p>";
+    text += "</div>";
+
+    text += "<p>I hope this quiz helped you better understand some rulings!</p>";
+
+    divQuestion.innerHTML = text;
+}
+
+function askQuestion() {
+    text = generateQuestionText(ruling_questions[currentQuestion]);
+
+    let divQuestion = document.getElementById("question");
+    divQuestion.innerHTML = text;
+        
+    let btnCheckAnswer = document.getElementById("btnCheckAnswer");
+    btnCheckAnswer.addEventListener("click", function (e) {
+        let value = getRadioValue("question");
+        if (value === null) return;
+
+        let correctness = value == ruling_questions[currentQuestion].correct;
+        if (correctness) ++score;
+
+        divQuestion.innerHTML += generateExplanationText(ruling_questions[currentQuestion],correctness);
+
+        let btnNextQuestion = document.getElementById("btnNextQuestion");
+        btnNextQuestion.addEventListener("click", function (e) {
+            ++currentQuestion;
+
+            if (currentQuestion == ruling_questions.length) {
+                displayResults();
+                return;
+            }
+
+            askQuestion();
+        });
+    });
 }
 
 document.addEventListener("DOMContentLoaded",function(e) {
@@ -48,6 +148,8 @@ document.addEventListener("DOMContentLoaded",function(e) {
             return;
         }
         currentQuiz = generateQuizOfSize(ruling_questions,40);
-        console.log(currentQuiz);
+        currentQuestion = 0;
+        
+        askQuestion();
     });
 });

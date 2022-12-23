@@ -63,7 +63,7 @@ header, main {
 
 	border: 2px solid #aaa;
 
-	padding: 4px;
+	padding: 8px;
 
 	margin-top: 20px;
 }
@@ -75,7 +75,7 @@ header div {
 	padding: 10px;
 }
 
-header div button {
+button {
 	cursor: pointer;
 
 	padding: 4px;
@@ -90,5 +90,23 @@ h1 {
 
 main {
 	height: 40%
+}
+
+.centerText {
+	text-align: center;
+}
+
+i.boldUnderline {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+p {
+	margin-top: 4px;
+}
+
+li {
+	margin-left: 1vw;
+	margin-top: 4px;
 }
 
