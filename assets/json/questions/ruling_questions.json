@@ -7,8 +7,8 @@
         "cards": ["Mirrorjade the Iceblade Dragon"],
         "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17069&request_locale=en"],
         "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field on attack declaration, so a replay can occur.</p>",
-        "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)"],
-        "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"]
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2015, page 164"],
+        "sources_links": ["https://ygorganization.com/perfectrulebook/"]
     },
     {
         "id": 1,
@@ -18,8 +18,8 @@
         "cards": ["Forbidden Droplet"],
         "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=15299&request_locale=en"],
         "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, the attack target left the field during the \"Before damage calculation\" timing, which is during the Damage Step, so a replay cannot occur.</p>",
-        "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)", "Forbidden Droplet can be activated in Damage Step"],
-        "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf", "https://db.ygorganization.com/card#15299"]
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2015, page 167", "Forbidden Droplet can be activated in Damage Step"],
+        "sources_links": ["https://ygorganization.com/perfectrulebook/", "https://db.ygorganization.com/card#15299"]
     },
     {
         "id": 2,
@@ -40,8 +40,8 @@
         "cards": ["Trickstar Lilybell", "Infinite Impermanence"],
         "links": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13045&request_locale=en", "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13631"],
         "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, ${0} lost the ability to attack directly before the Damage Step started, so a replay can occur.</p>",
-        "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)"],
-        "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"]
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2015, page 165"],
+        "sources_links": ["https://ygorganization.com/perfectrulebook/"]
     },
     {
         "id": 4,
