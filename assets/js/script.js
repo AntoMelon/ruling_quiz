@@ -5,6 +5,8 @@ var currentQuiz;
 var currentQuestion = 0;
 var score = 0;
 
+const SIZE = 20;
+
 fetch('./assets/json/questions/ruling_questions.json').then(response => response.json()).then(function (data) {
     ruling_questions = data;
 })
@@ -77,7 +79,7 @@ function generateQuestionText(questionObj) {
 function generateExplanationText(questionObj, correctness) {
     res = "";
 
-    res += "<p>You are <i class=\"boldUnderline\">" + (correctness ? "" : "IN") + "CORRECT</i></p>";
+    res += "<p>You are <i class=\"boldUnderline\">" + (correctness ? "" : "IN") + "CORRECT</i>." + (correctness ? "" : (" The correct answer was: <i class=\"boldUnderline\">" + insertCardNamesLinks(questionObj.propositions[questionObj.correct],questionObj.cards,questionObj.links) + "</i>")) + "</p>";
 
     res += insertCardNamesLinks(questionObj.explanation,questionObj.cards,questionObj.links);
 
@@ -147,7 +149,7 @@ document.addEventListener("DOMContentLoaded",function(e) {
             alert("Questions could not be loaded.");
             return;
         }
-        currentQuiz = generateQuizOfSize(ruling_questions,40);
+        currentQuiz = generateQuizOfSize(ruling_questions,SIZE);
         currentQuestion = 0;
         
         askQuestion();

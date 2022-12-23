@@ -31,7 +31,8 @@
         "explanation": "<p>According to a precedent regarding the effect of ${1}, it is legal to activate an effect to add a card to your hand at a future point in the turn/duel, even if there are currently no cards that could be added. If no cards can be added when it is time to do so, then the effect will simply resolve without effect.</p>",
         "sources": ["Precedent for Captain Roland"],
         "sources_links": ["https://db.ygorganization.com/qa#23006"]
-    },{
+    },
+    {
         "id": 3,
         "question": "Player A declares a direct attack with their ${0} while Player B controls a Monster. On attack declaration, Player B activates their ${1} to negate the effects of Player A's ${0}. Does a replay occur?",
         "propositions": ["Yes", "No"],
@@ -41,5 +42,22 @@
         "explanation": "<p>A replay can only occur before the Damage Step starts.</p><p>When Player A attacks, a replay can occur in the following situations:</p><ul><li>● The number of Monsters on Player B changes (even momentarily)</li><li>● The attack target leaves the field</li><li>● The attacking Monster gains the ability to attack directly</li><li>● The attacking monster can no longer attack how it was attacking (mostly applies to a Monster that had the ability to attack directly but loses it, due to negation, etc.)</li></ul><p>In this case, ${0} lost the ability to attack directly before the Damage Step started, so a replay can occur.</p>",
         "sources": ["Official Rulebook v9, page 35 (Page 39 of the PDF)"],
         "sources_links": ["https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/Rulebook_v9_en.pdf"]
+    },
+    {
+        "id": 4,
+        "question": "Player A declares a direct attack with their ${0} and proceeds do damage calculation successfully. After damage calculation, they activate the effect of that ${0} to send a \"Sky Striker\" card from their Deck to the GY. Which of the following card or effect can Player B activate in response to that effect?",
+        "propositions": ["The effect of ${1}","The second effect of ${2}","The first effect of ${3} (assuming Player B controls no Monsters)","The first effect of ${4} (assuming Player B has a card in their hand)"],
+        "correct": 2,
+        "cards": ["Sky Striker Ace - Hayate", "Ash Blossom & Joyous Spring", "Therion \"King\" Regulus", "PSY-Framegear Gamma", "Grapha, Dragon Overlord of Dark World"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13763&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12950&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17119&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12070&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17988&request_locale=en"
+        ],
+        "explanation": "<p>${0}'s effect happens \"After damage calcuation\", which is during the Damage Step. In general, Quick Effects cannot be activated during the Damage Step. However, Quick Effects that specifically negate the <i class=\"boldUnderline\">activation</i> of a card or effect can be activated during the Damage Step. Of the above cards' effects, the only one that negate the activation of an effect is ${3}, therefore is the only one that can be activated in this situtation.</p>",
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2017, page 112"],
+        "sources_links": ["https://ygorganization.com/perfect-rulebook-2017/"]
     }
 ]
