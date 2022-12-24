@@ -89,5 +89,19 @@
         "explanation": "<p>Unless specifically prevented to do so by another effect or restriction, a Monster whose effects are negated can still activate its effects, provided activation requirements are met and costs be paid. Costs will be paid, and the effect negated at resolution. ${1} reminds you of that in brackets, but that's not specific to ${1}, it applies to all cards that negate the ffects of Monsters. So Player A can activate the effect of their ${0}</p><p>To know how it resolves, it is important to note how ${1} is worded. It negates the effects of Monsters on the field <i class=\"boldUnderline\">while they are on the field</i>. Meaning that as soon as a Monster leaves the field, its effects are not negated. In this case, ${0}' effect was activated and resolves on the field, but since it is no longer on the field to be negated, ${1} will be destroyed.</p><p>I would have loved to find a specific ruling entry to illustrate that, but I couldn't find one on ygorg's database.</p>",
         "sources": [],
         "sources_links": []
+    },
+    {
+        "id": 7,
+        "question": "Player A controls a face-up ${0} and a face-up ${1}. If that ${0} is used as Link material while the effect of ${1} is applying, is it banished ?",
+        "propositions": ["Yes","No"],
+        "correct": 0,
+        "cards": ["Floowandereeze & Robina","Skill Drain"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=16498&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=5740&request_locale=en"
+        ],
+        "explanation": "<p>${1} only negates the effects of Monsters <i class=\"boldUnderline\">while they are face-up on the field</i>. The effect of ${0} that banishes it when it leaves the field is not an effect that applies while on the field, but rather an effect that applies while the card is moving from the field to a new location. Therefore, it cannot be negated by ${1} and ${0} will be banished.</p>",
+        "sources": ["Robina and Skill Drain interaction"],
+        "sources_links": ["https://db.ygorganization.com/qa#23305"]
     }
 ]
