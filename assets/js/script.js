@@ -112,7 +112,9 @@ function displayResults() {
 }
 
 function askQuestion() {
-    text = generateQuestionText(ruling_questions[currentQuestion]);
+    text = "<p><i class=\"boldUnderline\">Question " + currentQuestion + "/" + currentQuiz.length + " </i></p>";
+
+    text += generateQuestionText(currentQuiz[currentQuestion]);
 
     let divQuestion = document.getElementById("question");
     divQuestion.innerHTML = text;
@@ -122,16 +124,16 @@ function askQuestion() {
         let value = getRadioValue("question");
         if (value === null) return;
 
-        let correctness = value == ruling_questions[currentQuestion].correct;
+        let correctness = value == currentQuiz[currentQuestion].correct;
         if (correctness) ++score;
 
-        divQuestion.innerHTML += generateExplanationText(ruling_questions[currentQuestion],correctness);
+        divQuestion.innerHTML += generateExplanationText(currentQuiz[currentQuestion],correctness);
 
         let btnNextQuestion = document.getElementById("btnNextQuestion");
         btnNextQuestion.addEventListener("click", function (e) {
             ++currentQuestion;
 
-            if (currentQuestion == ruling_questions.length) {
+            if (currentQuestion == currentQuiz.length) {
                 displayResults();
                 return;
             }
@@ -144,6 +146,9 @@ function askQuestion() {
 document.addEventListener("DOMContentLoaded",function(e) {
 
     let btnGenerateQuiz = document.getElementById("btnGenerateQuiz")
+
+    btnGenerateQuiz.innerHTML = "Generate " + SIZE + " questions quiz";
+
     btnGenerateQuiz.addEventListener("click", function(e) {
         if (!areQuestionsLoaded()) {
             alert("Questions could not be loaded.");
