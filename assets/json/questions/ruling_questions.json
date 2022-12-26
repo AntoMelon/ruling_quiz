@@ -45,7 +45,7 @@
     },
     {
         "id": 4,
-        "question": "Player A declares a direct attack with their ${0} and proceeds do damage calculation successfully. After damage calculation, they activate the effect of that ${0} to send a \"Sky Striker\" card from their Deck to the GY. Which of the following card or effect can Player B activate in response to that effect?",
+        "question": "Player A declares a direct attack with their ${0} and proceeds to damage calculation successfully. After damage calculation, they activate the effect of that ${0} to send a \"Sky Striker\" card from their Deck to the GY. Which of the following card or effect can Player B activate in response to that effect?",
         "propositions": ["The 1st effect of ${1}","The 2nd effect of ${2}","The 1st effect of ${3} (assuming Player B controls no Monsters)","The 1st effect of ${4} (assuming Player B has a card in their hand)"],
         "correct": 2,
         "cards": ["Sky Striker Ace - Hayate", "Ash Blossom & Joyous Spring", "Therion \"King\" Regulus", "PSY-Framegear Gamma", "Grapha, Dragon Overlord of Dark World"],
@@ -137,7 +137,7 @@
     },
     {
         "id": 10,
-        "question": "Player A controls a face-up ${0}, and activates ${1}. From the following cards that Player B can activate in response, which of them will <i class=\"boldUnderline\">not</i> cause ${1} to be negated/resolving without effect?",
+        "question": "Player A controls a face-up ${0}, and activates ${1}. From the following cards that Player B can activate in response, which of them will <i class=\"boldUnderline\">not</i> cause ${1} to be negated/resolve without effect?",
         "propositions": ["The 1st effect of ${2}", "The 1st effect of ${3}", "${4} (declaring \"Fusion\")", "None of the above"],
         "correct": 1,
         "cards": ["Branded Lost", "Branded Fusion", "Ash Blossom & Joyous Spring", "Herald of Green Light", "Dimensional Barrier"],
