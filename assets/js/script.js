@@ -112,7 +112,7 @@ function displayResults() {
 }
 
 function askQuestion() {
-    text = "<p><i class=\"boldUnderline\">Question " + currentQuestion + "/" + currentQuiz.length + " </i></p>";
+    text = "<p><i class=\"boldUnderline\">Question " + (currentQuestion+1) + "/" + currentQuiz.length + " </i></p>";
 
     text += generateQuestionText(currentQuiz[currentQuestion]);
 
