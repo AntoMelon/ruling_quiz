@@ -103,5 +103,53 @@
         "explanation": "<p>${1} only negates the effects of Monsters <i class=\"boldUnderline\">while they are face-up on the field</i>. The effect of ${0} that banishes it when it leaves the field is not an effect that applies while on the field, but rather an effect that applies while the card is moving from the field to a new location. Therefore, it cannot be negated by ${1} and ${0} will be banished.</p>",
         "sources": ["Robina and Skill Drain interaction"],
         "sources_links": ["https://db.ygorganization.com/qa#23305"]
+    },
+    {
+        "id": 8,
+        "question": "Player A activates ${0}, and Player B responds with ${1}. After returning to an open gamestate, can Player A activate their second ${0}?",
+        "propositions": ["Yes", "No"],
+        "correct": 0,
+        "cards": ["Primeval Planet Perlereino", "Solemn Judgment"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17462&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=4861&request_locale=en"
+        ],
+        "explanation": "<p>${0} specifically mentions \"You can only <i class=\"boldUnderline\">activate</i> 1 ${0} per turn\". That means that if its activation is specifically negated, it is possible to activate a second one, since that first activation \"never happened\". And ${1} specifically negates the activation of a Spell Card, therefore a second ${0} can be activated in the same turn.</p>",
+        "sources": ["Yugipedia page on Once per turns"],
+        "sources_links": ["https://yugipedia.com/wiki/Once_per_turn#%22Only_once_per_turn%22"]
+    },
+    {
+        "id": 9,
+        "question": "Player A controls a face-up ${0}, and activates ${1}. Which of the follwing cards or effects <i class=\"boldUnderline\">cannot</i> Player B activate in reponse?",
+        "propositions": ["The 1st effect of ${2}", "The 1st effect of ${3}", "${4} (declaring \"Fusion\")", "None of the above"],
+        "correct": 3,
+        "cards": ["Branded Lost", "Branded Fusion", "Ash Blossom & Joyous Spring", "Herald of Green Light", "Dimensional Barrier"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17065&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17066&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12950&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=6693&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12668&request_locale=en"
+        ],
+        "explanation": "<p>${0} prevents the activation of ${1} from being negated, but doesn't specifically prevents a player from responding to the activation, even with an effect that would attempt to negate it. Therefore, all the aforementionned ards can be activated in response, even if the effect of ${3} won't be applied since it can't negate the activation of ${1}.</p>",
+        "sources": ["Ash and Green Light can be activated in that case"],
+        "sources_links": ["https://db.ygorganization.com/qa#23472"]
+    },
+    {
+        "id": 10,
+        "question": "Player A controls a face-up ${0}, and activates ${1}. From the following cards that Player B can activate in response, which of them will <i class=\"boldUnderline\">not</i> cause ${1} to be negated/resolving without effect?",
+        "propositions": ["The 1st effect of ${2}", "The 1st effect of ${3}", "${4} (declaring \"Fusion\")", "None of the above"],
+        "correct": 2,
+        "cards": ["Branded Lost", "Branded Fusion", "Ash Blossom & Joyous Spring", "Herald of Green Light", "Dimensional Barrier"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17065&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17066&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12950&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=6693&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12668&request_locale=en"
+        ],
+        "explanation": "<p>${0} specifically prevents the activation of ${1} from being negated, therefore if ${3} is chained to it, its effet won't be applied and ${1} will resolve normally. ${2} only negates the effect, so it won't be blocked by ${0} and the effect of ${1} will be negated. ${4} doesn't negate any activations or Spell effect so it can freely be chained, and prevent the Fusion Summon altogether, so ${1} will resolve without effect.</p>",
+        "sources": ["Ash will negate the effect and Green Light's effect won't apply"],
+        "sources_links": ["https://db.ygorganization.com/qa#23472"]
     }
 ]
