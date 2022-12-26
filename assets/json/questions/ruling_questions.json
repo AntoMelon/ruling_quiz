@@ -139,7 +139,7 @@
         "id": 10,
         "question": "Player A controls a face-up ${0}, and activates ${1}. From the following cards that Player B can activate in response, which of them will <i class=\"boldUnderline\">not</i> cause ${1} to be negated/resolving without effect?",
         "propositions": ["The 1st effect of ${2}", "The 1st effect of ${3}", "${4} (declaring \"Fusion\")", "None of the above"],
-        "correct": 2,
+        "correct": 1,
         "cards": ["Branded Lost", "Branded Fusion", "Ash Blossom & Joyous Spring", "Herald of Green Light", "Dimensional Barrier"],
         "links": [
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17065&request_locale=en",
