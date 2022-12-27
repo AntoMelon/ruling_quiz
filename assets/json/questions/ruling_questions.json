@@ -173,5 +173,34 @@
         "explanation": "<p>There is not much to say here, that's just what \"and\" means. Keep in mind this only applies at resolution, you must be able to resolve all mandatory parts of the effect to activate the card.</p>",
         "sources": ["Original Konami article on conjunctions"],
         "sources_links": ["https://yugiohblog.konami.com/articles/?p=4514"]
+    },
+    {
+        "id": 13,
+        "question": "Player A controls a face-up ${0} that has some Spell Counters placed on it. Player B activates ${1} to negate the effects of that ${0}. What happens to the Spell Counters placed on that ${0}?",
+        "propositions": ["They are removed","They are not removed"],
+        "correct": -1,
+        "cards": ["Selene, Queen of the Master Magicians", "Infinite Impermanence", "Spell Power Grasp"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=14937&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13631&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=8136&request_locale=en"
+        ],
+        "explanation": "<p>If the ability for a card to have counters on itself depends on its own effects, all those counters are removed when its effects are negated. Spell Counters cannot be placed wherever you want them to, they can only be placed on cards that specifically can have them (see the text of ${2} for example). Therefore in this case, ${0} will lose its Spell Counters.</p>",
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2017, page 171"],
+        "sources_links": ["https://ygorganization.com/perfect-rulebook-2017/"]
+    },
+    {
+        "id": 14,
+        "question": "Player A controls a face-up ${0} that has a Patrol Counter placed on it by its own effect. Player B activates ${1} to negate the effects of that ${0}. What happens to the Patrol Counter placed on that ${0}?",
+        "propositions": ["They are removed","They are not removed"],
+        "correct": -1,
+        "cards": ["Beat Cop from the Underworld", "Infinite Impermanence"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=14007&request_locale=en",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13631&request_locale=en"
+        ],
+        "explanation": "<p>If the ability for a card to have counters on itself depends on its own effects, all those counters are removed when its effects are negated. The Patrol Counter could have been placed on any face-up card on the field, therefore the abilty for ${0} to have it is not tied to its effects specifically. So in this case, ${0} will keep its Patrol counter</p><p>Note that the effect to prevent destruction is tied to the counter itself, so even while the effects of ${0} are negated, its destruction can still be prevented by reoving that counter.</p>",
+        "sources": ["Yu-Gi-Oh! Perfect Rulebook 2017, page 171"],
+        "sources_links": ["https://ygorganization.com/perfect-rulebook-2017/"]
     }
 ]
