@@ -162,5 +162,16 @@
         "explanation": "<p>There is not much to say here, that's just what \"and if you do\" means. Keep in mind this only applies at resolution, you must be able to resolve all mandatory parts of the effect to activate the card.</p>",
         "sources": ["Original Konami article on conjunctions"],
         "sources_links": ["https://yugiohblog.konami.com/articles/?p=4514"]
+    },
+    {
+        "id": 12,
+        "question": "Which of the following conjunctions has the meaning: \"A needs to happen for B to resolve, and vice-versa, also A and B happen at the same time\"?",
+        "propositions": ["Do A, also do B", "Do A, and if you do, do B", "Do A, then do B", "Do A, and do B"],
+        "correct": 3,
+        "cards": [],
+        "links": [],
+        "explanation": "<p>There is not much to say here, that's just what \"and\" means. Keep in mind this only applies at resolution, you must be able to resolve all mandatory parts of the effect to activate the card.</p>",
+        "sources": ["Original Konami article on conjunctions"],
+        "sources_links": ["https://yugiohblog.konami.com/articles/?p=4514"]
     }
 ]
