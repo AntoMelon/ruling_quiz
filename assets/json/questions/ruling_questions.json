@@ -151,5 +151,16 @@
         "explanation": "<p>${0} specifically prevents the activation of ${1} from being negated, therefore if ${3} is chained to it, its effet won't be applied and ${1} will resolve normally. ${2} only negates the effect, so it won't be blocked by ${0} and the effect of ${1} will be negated. ${4} doesn't negate any activations or Spell effect so it can freely be chained, and prevent the Fusion Summon altogether, so ${1} will resolve without effect.</p>",
         "sources": ["Ash will negate the effect and Green Light's effect won't apply"],
         "sources_links": ["https://db.ygorganization.com/qa#23472"]
+    },
+    {
+        "id": 11,
+        "question": "Which of the following conjunctions has the meaning: \"A needs to happen for B to resolve, but B doesn't need to happen for A to resolve, also A and B happen at the same time\"?",
+        "propositions": ["Do A, also do B", "Do A, and if you do, do B", "Do A, then do B", "Do A, and do B"],
+        "correct": 1,
+        "cards": [],
+        "links": [],
+        "explanation": "<p>There is not much to say here, that's just what \"and if you do\" means. Keep in mind this only applies at resolution, you must be able to resolve all mandatory parts of the effect to activate the card.</p>",
+        "sources": ["Original Konami article on conjunctions"],
+        "sources_links": ["https://yugiohblog.konami.com/articles/?p=4514"]
     }
 ]
