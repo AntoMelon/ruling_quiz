@@ -178,7 +178,7 @@
         "id": 13,
         "question": "Player A controls a face-up ${0} that has some Spell Counters placed on it. Player B activates ${1} to negate the effects of that ${0}. What happens to the Spell Counters placed on that ${0}?",
         "propositions": ["They are removed","They are not removed"],
-        "correct": -1,
+        "correct": 0,
         "cards": ["Selene, Queen of the Master Magicians", "Infinite Impermanence", "Spell Power Grasp"],
         "links": [
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=14937&request_locale=en",
@@ -193,7 +193,7 @@
         "id": 14,
         "question": "Player A controls a face-up ${0} that has a Patrol Counter placed on it by its own effect. Player B activates ${1} to negate the effects of that ${0}. What happens to the Patrol Counter placed on that ${0}?",
         "propositions": ["They are removed","They are not removed"],
-        "correct": -1,
+        "correct": 1,
         "cards": ["Beat Cop from the Underworld", "Infinite Impermanence"],
         "links": [
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=14007&request_locale=en",
