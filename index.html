@@ -9,14 +9,31 @@
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <script src="assets/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Yu-Gi-Oh! TCG Ruling Quiz</h1>
         <p>Welcome to the Yu-Gi-Oh! TCG Ruling Quiz! It aims to help players understand rulings, and to provide a practise tool for people aiming to pass RC-1 or RC-2.</p>
-    
-        <div class="centerText"><button id="btnGenerateQuiz">Generate quiz</button></div>
+
+        <div class="centerText">
+            <button id="btnGenerateQuiz">Generate quiz</button>
+            <button id="btnHelp">How does it work?</button>
+        </div>
+
+        <div id="divHelp">
+            <p>You will be successively presented some situations that could happen in a real game, described by 2 or 3 sentences. Those situations are essentially about 2 or 3 card interacting, and are written to be plausible situations.</p>
+            <p>At the end of each situation, there will be a short question about what should happen. Just beneath the questions there will be between 2 and 4 answers. There is always <i class="boldUnderline"> only one </i>correct answer.</p>
+            <p>A button will be present on the bottom to validate your answer. You will then be given the correct answer as well as a short explanation on why it is correct. There will be also be sources when I could find pertinent ones.</p>
+
+            <div class="centerText">
+                <button id="btnGotIt">Got it!</button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -24,5 +41,10 @@
             
         </div>
     </main>
+
+    <footer>
+        <p>This website is not affiliated nor endorsed by Konami. Yu-Gi-Oh! is a trademark of Konami and Shueisha.</p>
+        <p>Developped by AntoMelon</p>
+    </footer>
     
 </body>

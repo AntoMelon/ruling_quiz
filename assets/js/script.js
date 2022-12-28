@@ -8,7 +8,7 @@ var score = 0;
 const SIZE = 20;
 
 fetch('./assets/json/questions/ruling_questions.json').then(response => response.json()).then(function (data) {
-    ruling_questions = data;
+   ruling_questions = data;
 })
 
 function areQuestionsLoaded() {
@@ -145,11 +145,29 @@ function askQuestion() {
 
 document.addEventListener("DOMContentLoaded",function(e) {
 
-    let btnGenerateQuiz = document.getElementById("btnGenerateQuiz")
+    let btnHelp = document.getElementById("btnHelp");
+    btnHelp.addEventListener("click", function(e) {
+        if (currentQuiz != undefined) return;
+        let divHelp = document.getElementById("divHelp");
+
+        divHelp.style.display = "inline";
+    });
+
+    let btnGotIt = document.getElementById("btnGotIt");
+    btnGotIt.addEventListener("click", function(e) {
+        let divHelp = document.getElementById("divHelp");
+
+        divHelp.style.display = "none";
+    });
+
+    let btnGenerateQuiz = document.getElementById("btnGenerateQuiz");
 
     btnGenerateQuiz.innerHTML = "Generate " + SIZE + " questions quiz";
 
     btnGenerateQuiz.addEventListener("click", function(e) {
+        let divHelp = document.getElementById("divHelp");
+        divHelp.style.display = "none";
+
         if (!areQuestionsLoaded()) {
             alert("Questions could not be loaded.");
             return;
