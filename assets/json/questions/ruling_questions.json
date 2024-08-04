@@ -65,16 +65,15 @@
         "question": "Player A controls a Special Summoned Monster, activates ${0} and sends a Monster from their Deck to the GY, while Player B has ${1} and ${2} in their hand. Which effects can Player B trigger in a new chain after resolution?",
         "propositions": ["Only the 1st effect of ${1}, and the 1st effect of ${2} cannot be activated", "Only the 1st effect of ${2}, and the 1st effect of ${1} cannot be activated", "Only the 1st effect of ${1} OR only the 1st effect of ${2}", "Both the 1st effects of ${1} and ${2}"],
         "correct": 2,
-        "cards": ["Foolish Burial", "Kelbek the Ancient Vanguard", "Agido the Ancient Sentinel", "Green Baboon, Defender of the Forest"],
+        "cards": ["Foolish Burial", "Kelbek the Ancient Vanguard", "Agido the Ancient Sentinel"],
         "links": [
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=5236&request_locale=en",
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17605&request_locale=en",
-            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17606&request_locale=en",
-            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=6380&request_locale=en"
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17606&request_locale=en"
         ],
-        "explanation": "<p>Both ${1} and ${2} have met their activation conditions. However, you cannot activate 2 Optional Trigger effects that Special Summon themselves from hand in the same chain. Both of these effects are Optional Triggers that would have the card that activates it Special Summon itself from the hand. Therefore, only one of these effects can be activated in a chain, not both. I could not find it written in the perfect Rulebook, but it seems to have a precedent in ${3}.</p>",
-        "sources": ["Green Baboon's precedent"],
-        "sources_links": ["https://db.ygorganization.com/qa#8192"]
+        "explanation": "<p>Both ${1} and ${2} have met their activation conditions. However, you cannot activate 2 Optional Trigger effects that Special Summon themselves from hand in the same chain. Both of these effects are Optional Triggers that would have the card that activates it Special Summon itself from the hand. Therefore, only one of these effects can be activated in a chain, not both.</p>",
+        "sources": ["Only one optional trigger that summons itself from hand can activate in a chain"],
+        "sources_links": ["https://db.ygoresources.com/qa#24006"]
     },
     {
         "id": 6,
