@@ -85,9 +85,9 @@
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13896&request_locale=en",
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=5740&request_locale=en"
         ],
-        "explanation": "<p>Unless specifically prevented to do so by another effect or restriction, a Monster whose effects are negated can still activate its effects, provided activation requirements are met and costs can be paid. Costs will be paid, and the effect negated at resolution. ${1} reminds you of that in brackets, but that's not specific to ${1}, it applies to all cards that negate the effects of Monsters. So Player A can activate the effect of their ${0}.</p><p>To know how it resolves, it is important to note how ${1} is worded. It negates the effects of Monsters on the field <i class=\"boldUnderline\">while they are on the field</i>. Meaning that as soon as a Monster leaves the field, its effects are no longer negated. In this case, ${0}' effect was activated and resolves on the field, but since it is no longer on the field to be negated, ${1} will be destroyed.</p><p>I would have loved to find a specific ruling entry to illustrate that, but I couldn't find one on ygorg's database.</p>",
-        "sources": [],
-        "sources_links": []
+        "explanation": "<p>Unless specifically prevented to do so by another effect or restriction, a Monster whose effects are negated can still activate its effects, provided activation requirements are met and costs can be paid. Costs will be paid, and the effect negated at resolution. ${1} reminds you of that in brackets, but that's not specific to ${1}, it applies to all cards that negate the effects of Monsters. So Player A can activate the effect of their ${0}.</p><p>To know how it resolves, it is important to note how ${1} is worded. It negates the effects of Monsters on the field <i class=\"boldUnderline\">while they are on the field</i>. Meaning that as soon as a Monster leaves the field, its effects are no longer negated. In this case, ${0}' effect was activated and resolves on the field, but since it is no longer on the field to be negated, ${1} will be destroyed.</p>",
+        "sources": ["Skill Drain does not prevent activations and only negates if the Monster is still on the field"],
+        "sources_links": ["https://db.ygoresources.com/qa#23257"]
     },
     {
         "id": 7,
@@ -220,7 +220,7 @@
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12908",
             "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=4342"
         ],
-        "explanation": "<p>When multiple trigger effects meet their activation conditions at the same time, the chain is built in this order:</p><ul><li>1. Mandatory triggers from the turn player</li><li>2. Mandatory triggers from their opponent</li><li>3. Optionnal triggers from the turn player</li><li>Optionnal triggers from their opponent</li></ul><p>An effect is optionnal if its activation conditions include <strong>\"You can\"</strong>. Otherwise, it is mandatory.</p>",
+        "explanation": "<p>When multiple trigger effects meet their activation conditions at the same time, the chain is built in this order:</p><ul><li>1. Mandatory triggers from the turn player</li><li>2. Mandatory triggers from their opponent</li><li>3. Optionnal triggers from the turn player</li><li>4. Optionnal triggers from their opponent</li></ul><p>An effect is optionnal if its activation conditions include <strong>\"You can\"</strong>. Otherwise, it is mandatory.</p>",
         "sources": ["Yu-Gi-Oh! TCG Official Rulebook Version 10, page 51"],
         "sources_links": ["https://img.yugioh-card.com/en/downloads/rulebook/SD_RuleBook_EN_10.pdf"]
     }
