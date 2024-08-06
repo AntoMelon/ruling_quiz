@@ -201,5 +201,27 @@
         "explanation": "<p>If the ability for a card to have counters on itself depends on its own effects, all those counters are removed when its effects are negated. The Patrol Counter could have been placed on any face-up card on the field, therefore the abilty for ${0} to have it is not tied to its effects specifically. So in this case, ${0} will keep its Patrol counter</p><p>Note that the effect to prevent destruction is tied to the counter itself, so even while the effects of ${0} are negated, its destruction can still be prevented by reoving that counter.</p>",
         "sources": ["Yu-Gi-Oh! Perfect Rulebook 2017, page 171"],
         "sources_links": ["https://ygorganization.com/perfect-rulebook-2017/"]
+    },
+    {
+        "id": 15,
+        "question": "Player A controls a face-up ${2} and a face-up ${3}. Player B controls a face-up ${0} and a face-up ${1}. Player A activates ${4}, destroying all 4 Monsters. Assuming all trigger effects can legally activate and both players activate all effects, in which order is the chain built up?",
+        "propositions" : [
+            "Madolche Chouxvalier -> Self-Destruct Ant -> Performage Trick Clown -> Double Iris Magician",
+            "Self-Destruct Ant -> Double Iris Magician -> Madolche Chouxvalier -> Performage Trick Clown",
+            "Self-Destruct Ant -> Madolche Chouxvalier -> Double Iris Magician -> Performage Trick Clown",
+            "Madolche Chouxvalier -> Performage Trick Clown -> Self-Destruct Ant -> Double Iris Magician"
+        ],
+        "correct" : 2,
+        "cards": ["Madolche Chouxvalier", "Performage Trick Clown", "Self-Destruct Ant", "Double Iris Magician", "Dark Hole"],
+        "links": [
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=10153",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=11802",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=13251",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=12908",
+            "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=4342"
+        ],
+        "explanation": "<p>When multiple trigger effects meet their activation conditions at the same time, the chain is built in this order:</p><ul><li>1. Mandatory triggers from the turn player</li><li>2. Mandatory triggers from their opponent</li><li>3. Optionnal triggers from the turn player</li><li>Optionnal triggers from their opponent</li></ul><p>An effect is optionnal if its activation conditions include <strong>\"You can\"</strong>. Otherwise, it is mandatory.</p>",
+        "sources": ["Yu-Gi-Oh! TCG Official Rulebook Version 10, page 51"],
+        "sources_links": ["https://img.yugioh-card.com/en/downloads/rulebook/SD_RuleBook_EN_10.pdf"]
     }
 ]
